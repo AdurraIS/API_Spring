@@ -28,4 +28,8 @@ public class ProdutoService {
     }
 
     public Produto save(Produto produto) {return produtoRepository.save(produto);}
+
+    public void deleteById(Long id) {
+        produtoRepository.deleteById(id);
+    }
 }
